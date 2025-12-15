@@ -3,12 +3,80 @@
   "WorkspaceRootPath": "D:\\1-41\\Auto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\views\\testdriveview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\views\\testdriveview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{1A0C47A8-A9A7-4B23-BC21-96671887BE08}|Interfaces\\Interfaces.csproj|d:\\1-41\\auto\\interfaces\\services\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0C47A8-A9A7-4B23-BC21-96671887BE08}|Interfaces\\Interfaces.csproj|solutionrelative:interfaces\\services\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1A0C47A8-A9A7-4B23-BC21-96671887BE08}|Interfaces\\Interfaces.csproj|d:\\1-41\\auto\\interfaces\\dto\\carinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1A0C47A8-A9A7-4B23-BC21-96671887BE08}|Interfaces\\Interfaces.csproj|solutionrelative:interfaces\\dto\\carinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|d:\\1-41\\auto\\dal\\dbcontext\\autosaloncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|solutionrelative:dal\\dbcontext\\autosaloncontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|d:\\1-41\\auto\\dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|solutionrelative:dal\\dal.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\carmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\carmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\enginespec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\enginespec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\extraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\extraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\sale.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\saleextraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\saleextraservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\testdrive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\testdrive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\transmissionspec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\transmissionspec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|d:\\1-41\\auto\\domainmodel\\trimlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8C0C55-5C93-4E87-9EA7-6CEAA3A32202}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\trimlevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\auto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\auto.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\views\\catalogview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\views\\catalogview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\views\\catalogview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\views\\catalogview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\views\\testdriveview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\views\\testdriveview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\views\\reportsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -17,10 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\views\\catalogview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\views\\catalogview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,8 +122,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarInfoDto.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Interfaces\\Dto\\CarInfoDto.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Dto\\CarInfoDto.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Interfaces\\Dto\\CarInfoDto.cs*",
+              "RelativeToolTip": "Interfaces\\Dto\\CarInfoDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:47:24.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ICatalogService.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Interfaces\\Services\\ICatalogService.cs",
+              "RelativeDocumentMoniker": "Interfaces\\Services\\ICatalogService.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Interfaces\\Services\\ICatalogService.cs*",
+              "RelativeToolTip": "Interfaces\\Services\\ICatalogService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:46:09.919Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1ce3aef-c78d-49ee-b72b-ec1fbc908313}"
@@ -70,68 +160,232 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EngineSpec.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\EngineSpec.cs",
+              "RelativeDocumentMoniker": "DomainModel\\EngineSpec.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\EngineSpec.cs",
+              "RelativeToolTip": "DomainModel\\EngineSpec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:27:38.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\Customer.cs",
+              "RelativeDocumentMoniker": "DomainModel\\Customer.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\Customer.cs",
+              "RelativeToolTip": "DomainModel\\Customer.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:27:25.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CarModel.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\CarModel.cs",
+              "RelativeDocumentMoniker": "DomainModel\\CarModel.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\CarModel.cs",
+              "RelativeToolTip": "DomainModel\\CarModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:27:15.418Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Car.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\Car.cs",
+              "RelativeDocumentMoniker": "DomainModel\\Car.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\Car.cs",
+              "RelativeToolTip": "DomainModel\\Car.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:13:39.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DAL.csproj",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DAL\\DAL.csproj",
+              "RelativeDocumentMoniker": "DAL\\DAL.csproj",
+              "ToolTip": "D:\\1-41\\Auto\\DAL\\DAL.csproj",
+              "RelativeToolTip": "DAL\\DAL.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T09:55:50.587Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ReportsView.xaml",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\ReportsView.xaml",
-              "RelativeDocumentMoniker": "Auto\\Views\\ReportsView.xaml",
-              "ToolTip": "D:\\1-41\\Auto\\Auto\\Views\\ReportsView.xaml",
-              "RelativeToolTip": "Auto\\Views\\ReportsView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T17:14:32.368Z",
+              "Title": "AutoSalonContext.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DAL\\DbContext\\AutoSalonContext.cs",
+              "RelativeDocumentMoniker": "DAL\\DbContext\\AutoSalonContext.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DAL\\DbContext\\AutoSalonContext.cs",
+              "RelativeToolTip": "DAL\\DbContext\\AutoSalonContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T09:56:45.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
+              "Title": "ExtraService.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\ExtraService.cs",
+              "RelativeDocumentMoniker": "DomainModel\\ExtraService.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\ExtraService.cs",
+              "RelativeToolTip": "DomainModel\\ExtraService.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAuwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:28:03.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Sale.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\Sale.cs",
+              "RelativeDocumentMoniker": "DomainModel\\Sale.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\Sale.cs",
+              "RelativeToolTip": "DomainModel\\Sale.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:28:12.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SaleExtraService.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\SaleExtraService.cs",
+              "RelativeDocumentMoniker": "DomainModel\\SaleExtraService.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\SaleExtraService.cs",
+              "RelativeToolTip": "DomainModel\\SaleExtraService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:28:31.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TestDrive.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\TestDrive.cs",
+              "RelativeDocumentMoniker": "DomainModel\\TestDrive.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\TestDrive.cs",
+              "RelativeToolTip": "DomainModel\\TestDrive.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:28:43.53Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TransmissionSpec.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\TransmissionSpec.cs",
+              "RelativeDocumentMoniker": "DomainModel\\TransmissionSpec.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\TransmissionSpec.cs",
+              "RelativeToolTip": "DomainModel\\TransmissionSpec.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:28:57.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TrimLevel.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DomainModel\\TrimLevel.cs",
+              "RelativeDocumentMoniker": "DomainModel\\TrimLevel.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DomainModel\\TrimLevel.cs",
+              "RelativeToolTip": "DomainModel\\TrimLevel.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAuwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-14T11:29:09.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Auto.csproj",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Auto.csproj",
+              "RelativeDocumentMoniker": "Auto\\Auto.csproj",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\Auto.csproj",
+              "RelativeToolTip": "Auto\\Auto.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-14T10:13:15.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\appsettings.json",
+              "RelativeDocumentMoniker": "Auto\\appsettings.json",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\appsettings.json",
+              "RelativeToolTip": "Auto\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-12-14T10:15:52.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "TestDriveView.xaml",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\TestDriveView.xaml",
               "RelativeDocumentMoniker": "Auto\\Views\\TestDriveView.xaml",
               "ToolTip": "D:\\1-41\\Auto\\Auto\\Views\\TestDriveView.xaml",
               "RelativeToolTip": "Auto\\Views\\TestDriveView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T17:14:39.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T17:14:39.867Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 20,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Auto\\MainWindow.xaml",
               "ToolTip": "D:\\1-41\\Auto\\Auto\\MainWindow.xaml",
               "RelativeToolTip": "Auto\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T16:54:42.256Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T16:54:42.256Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "CatalogView.xaml",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\CatalogView.xaml",
               "RelativeDocumentMoniker": "Auto\\Views\\CatalogView.xaml",
               "ToolTip": "D:\\1-41\\Auto\\Auto\\Views\\CatalogView.xaml",
               "RelativeToolTip": "Auto\\Views\\CatalogView.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T17:14:20.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T17:14:20.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 16,
               "Title": "CatalogView.xaml.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\CatalogView.xaml.cs",
               "RelativeDocumentMoniker": "Auto\\Views\\CatalogView.xaml.cs",
               "ToolTip": "D:\\1-41\\Auto\\Auto\\Views\\CatalogView.xaml.cs",
               "RelativeToolTip": "Auto\\Views\\CatalogView.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T17:15:37.617Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T17:15:37.617Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 19,
+              "Title": "ReportsView.xaml",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\ReportsView.xaml",
+              "RelativeDocumentMoniker": "Auto\\Views\\ReportsView.xaml",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\Views\\ReportsView.xaml",
+              "RelativeToolTip": "Auto\\Views\\ReportsView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T17:14:32.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Auto\\MainWindow.xaml.cs",
@@ -139,12 +393,11 @@
               "RelativeToolTip": "Auto\\MainWindow.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T16:54:40.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T16:54:40.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "ReportsView.xaml.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\ReportsView.xaml.cs",
               "RelativeDocumentMoniker": "Auto\\Views\\ReportsView.xaml.cs",
@@ -152,24 +405,22 @@
               "RelativeToolTip": "Auto\\Views\\ReportsView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T17:15:35.346Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T17:15:35.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\App.xaml",
               "RelativeDocumentMoniker": "Auto\\App.xaml",
               "ToolTip": "D:\\1-41\\Auto\\Auto\\App.xaml",
               "RelativeToolTip": "Auto\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-27T16:57:16.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T16:57:16.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 24,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\App.xaml.cs",
               "RelativeDocumentMoniker": "Auto\\App.xaml.cs",
@@ -177,12 +428,11 @@
               "RelativeToolTip": "Auto\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T17:13:48.786Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T17:13:48.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 25,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Auto\\AssemblyInfo.cs",
@@ -190,12 +440,11 @@
               "RelativeToolTip": "Auto\\AssemblyInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T16:55:53.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T16:55:53.769Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 26,
               "Title": "TestDriveView.xaml.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\TestDriveView.xaml.cs",
               "RelativeDocumentMoniker": "Auto\\Views\\TestDriveView.xaml.cs",
@@ -203,21 +452,19 @@
               "RelativeToolTip": "Auto\\Views\\TestDriveView.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T17:15:32.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T17:15:32.667Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 27,
               "Title": "App.g.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\obj\\Debug\\net8.0-windows\\App.g.cs",
               "RelativeDocumentMoniker": "Auto\\obj\\Debug\\net8.0-windows\\App.g.cs",
               "ToolTip": "D:\\1-41\\Auto\\Auto\\obj\\Debug\\net8.0-windows\\App.g.cs",
               "RelativeToolTip": "Auto\\obj\\Debug\\net8.0-windows\\App.g.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAAAEwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAIBJwEwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T17:29:10.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T17:29:10.631Z"
             }
           ]
         }
