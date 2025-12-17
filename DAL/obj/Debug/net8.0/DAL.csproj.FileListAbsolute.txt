@@ -16,3 +16,5 @@ D:\1-41\Auto\DAL\obj\Debug\net8.0\refint\DAL.dll
 D:\1-41\Auto\DAL\obj\Debug\net8.0\DAL.pdb
 D:\1-41\Auto\DAL\obj\Debug\net8.0\DAL.genruntimeconfig.cache
 D:\1-41\Auto\DAL\obj\Debug\net8.0\ref\DAL.dll
+D:\1-41\Auto\DAL\bin\Debug\net8.0\Interfaces.dll
+D:\1-41\Auto\DAL\bin\Debug\net8.0\Interfaces.pdb

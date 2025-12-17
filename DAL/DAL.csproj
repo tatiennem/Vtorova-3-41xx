@@ -13,10 +13,12 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Ninject" Version="3.3.6" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DomainModel\DomainModel.csproj" />
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj" />
   </ItemGroup>
 
 </Project>

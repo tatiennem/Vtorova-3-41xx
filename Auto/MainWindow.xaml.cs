@@ -16,6 +16,7 @@ namespace Auto
             catalogView = new CatalogView();
             testDriveView = new TestDriveView();
             reportsView = new ReportsView();
+            
 
             MainContent.Content = catalogView;
         }

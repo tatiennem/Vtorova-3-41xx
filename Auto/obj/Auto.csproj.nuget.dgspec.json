@@ -33,8 +33,14 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
+              "D:\\1-41\\Auto\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\1-41\\Auto\\BLL\\BLL.csproj"
+              },
               "D:\\1-41\\Auto\\DAL\\DAL.csproj": {
                 "projectPath": "D:\\1-41\\Auto\\DAL\\DAL.csproj"
+              },
+              "D:\\1-41\\Auto\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "D:\\1-41\\Auto\\Interfaces\\Interfaces.csproj"
               }
             }
           }
@@ -54,6 +60,54 @@
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Ninject": {
+              "target": "Package",
+              "version": "[3.3.6, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -71,6 +125,82 @@
             },
             "Microsoft.WindowsDesktop.App.WPF": {
               "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\1-41\\Auto\\BLL\\BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\1-41\\Auto\\BLL\\BLL.csproj",
+        "projectName": "BLL",
+        "projectPath": "D:\\1-41\\Auto\\BLL\\BLL.csproj",
+        "packagesPath": "C:\\Users\\tatya\\.nuget\\packages\\",
+        "outputPath": "D:\\1-41\\Auto\\BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tatya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\1-41\\Auto\\DAL\\DAL.csproj": {
+                "projectPath": "D:\\1-41\\Auto\\DAL\\DAL.csproj"
+              },
+              "D:\\1-41\\Auto\\DomainModel\\DomainModel.csproj": {
+                "projectPath": "D:\\1-41\\Auto\\DomainModel\\DomainModel.csproj"
+              },
+              "D:\\1-41\\Auto\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "D:\\1-41\\Auto\\Interfaces\\Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
@@ -108,6 +238,9 @@
             "projectReferences": {
               "D:\\1-41\\Auto\\DomainModel\\DomainModel.csproj": {
                 "projectPath": "D:\\1-41\\Auto\\DomainModel\\DomainModel.csproj"
+              },
+              "D:\\1-41\\Auto\\Interfaces\\Interfaces.csproj": {
+                "projectPath": "D:\\1-41\\Auto\\Interfaces\\Interfaces.csproj"
               }
             }
           }
@@ -141,6 +274,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.4, )"
+            },
+            "Ninject": {
+              "target": "Package",
+              "version": "[3.3.6, )"
             }
           },
           "imports": [
@@ -192,6 +329,76 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\1-41\\Auto\\Interfaces\\Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\1-41\\Auto\\Interfaces\\Interfaces.csproj",
+        "projectName": "Interfaces",
+        "projectPath": "D:\\1-41\\Auto\\Interfaces\\Interfaces.csproj",
+        "packagesPath": "C:\\Users\\tatya\\.nuget\\packages\\",
+        "outputPath": "D:\\1-41\\Auto\\Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tatya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\1-41\\Auto\\DomainModel\\DomainModel.csproj": {
+                "projectPath": "D:\\1-41\\Auto\\DomainModel\\DomainModel.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
