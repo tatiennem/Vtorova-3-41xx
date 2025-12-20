@@ -1,4 +1,4 @@
-namespace Auto.Services
+namespace Domain
 {
     public class ContractOptions
     {

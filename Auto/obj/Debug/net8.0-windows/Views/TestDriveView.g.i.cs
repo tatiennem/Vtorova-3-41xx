@@ -52,7 +52,7 @@ namespace Auto.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Auto;component/views/testdriveview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Auto;V1.0.0.0;component/views/testdriveview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Views\TestDriveView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -13,16 +13,17 @@
         WindowState="Normal"
         ResizeMode="CanResize"
         Background="#0E1E2E">
-
     <Window.Resources>
         <DataTemplate DataType="{x:Type vm:CatalogViewModel}">
             <views:CatalogView />
         </DataTemplate>
-       
-        
-        
+        <DataTemplate DataType="{x:Type vm:TestDriveViewModel}">
+            <views:TestDriveView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:ReportsViewModel}">
+            <views:ReportsView />
+        </DataTemplate>
     </Window.Resources>
-
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="337*"/>
@@ -46,7 +47,7 @@
                     </StackPanel>
                 </StackPanel>
 
-                <ItemsControl ItemsSource="{Binding NavigationItems}" Width="220">
+                <ItemsControl ItemsSource="{Binding NavigationItems}" Width="100">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Button Style="{StaticResource NavButton}"

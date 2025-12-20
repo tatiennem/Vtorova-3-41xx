@@ -2,12 +2,10 @@
 using Auto.Services;
 using Auto.Services.Interfaces;
 using Auto.ViewModels;
-using AutoSalonToyota.Services;
+using Domain;
 using DAL.DbContext;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Npgsql.EntityFrameworkCore.PostgreSQL;
 using System;
 using System.Windows;
 
@@ -26,55 +24,49 @@ namespace Auto
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .Build();
 
-
-
             var serviceCollection = new ServiceCollection();
             ConfigureServices(serviceCollection, configuration);
 
             _services = serviceCollection.BuildServiceProvider();
 
-            
+            using (var scope = _services.CreateScope())
+            {
+                var initializer = scope.ServiceProvider.GetRequiredService<DbInitializer>();
+                await initializer.InitializeAsync();
+            }
 
             var mainWindow = _services.GetRequiredService<MainWindow>();
             var mainVm = _services.GetRequiredService<MainViewModel>();
             mainWindow.DataContext = mainVm;
-           
+            if (mainVm.CurrentViewModel is IRefreshable refreshable)
+            {
+                await refreshable.RefreshAsync(force: true);
+            }
             mainWindow.Show();
         }
 
         private static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
             services.AddSingleton(configuration);
-            services.AddDbContextFactory<AutoSalonContext>(options =>
-            {
-                var provider = configuration["Database:Provider"];
-                var connectionString = configuration["Database:ConnectionString"];
-
-                if (provider == "Postgres" && !string.IsNullOrEmpty(connectionString))
-                {
-                    // Для PostgreSQL
-                    options.UseNpgsql(connectionString);
-                }
-                
-            });
-
+            services.Configure<DatabaseOptions>(configuration.GetSection("Database"));
             services.Configure<ContractOptions>(configuration.GetSection("Contracts"));
 
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
             services.AddSingleton<INotificationService, NotificationService>();
-           
+            services.AddDbContextFactory<AutoSalonContext>((sp, options) => DatabaseProviderResolver.Configure(sp, options),
+                ServiceLifetime.Transient);
 
-           
+            services.AddScoped<DbInitializer>();
             services.AddScoped<ICatalogService, CatalogService>();
             services.AddScoped<ISalesService, SalesService>();
-            
+            services.AddScoped<ITestDriveService, TestDriveService>();
+            services.AddScoped<IReportService, ReportService>();
             services.AddScoped<IContractService, ContractService>();
 
-            services.AddSingleton<MainViewModel>();
+            services.AddTransient<MainViewModel>();
             services.AddTransient<CatalogViewModel>();
-            services.AddScoped<ITestDriveService, TestDriveService>();
             services.AddTransient<TestDriveViewModel>();
-
+            services.AddTransient<ReportsViewModel>();
 
             services.AddSingleton<MainWindow>();
         }

@@ -8,7 +8,7 @@ using Domain.Entities;
 using Auto.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace AutoSalonToyota.Services
+namespace Auto.Services
 {
     public class TestDriveService : ITestDriveService
     {
