@@ -19,47 +19,42 @@
         <Border Grid.Row="1" Grid.Column="0" Background="White" Padding="14" CornerRadius="12" BorderBrush="#E7ECF2" BorderThickness="1" Margin="0 0 12 0">
             <StackPanel>
                 <TextBlock Text="Автомобиль" FontWeight="SemiBold"/>
-                <ComboBox Margin="0 4 0 8">
-                    <ComboBoxItem>
-                        <StackPanel>
-                            <TextBlock Text="Toyota Camry" FontWeight="SemiBold"/>
-                            <TextBlock Text="Комфорт" Foreground="#5A6A7A"/>
-                            <TextBlock Text="Черный" Foreground="#5A6A7A"/>
-                        </StackPanel>
-                    </ComboBoxItem>
-                    <ComboBoxItem>
-                        <StackPanel>
-                            <TextBlock Text="Toyota RAV4" FontWeight="SemiBold"/>
-                            <TextBlock Text="Престиж" Foreground="#5A6A7A"/>
-                            <TextBlock Text="Белый" Foreground="#5A6A7A"/>
-                        </StackPanel>
-                    </ComboBoxItem>
+                <ComboBox ItemsSource="{Binding Cars}" SelectedItem="{Binding SelectedCar}" Margin="0 4 0 8">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <TextBlock Text="{Binding Model}" FontWeight="SemiBold"/>
+                                <TextBlock Text="{Binding Trim}" Foreground="#5A6A7A"/>
+                                <TextBlock Text="{Binding Color}" Foreground="#5A6A7A"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
                 </ComboBox>
 
                 <TextBlock Text="Дата" FontWeight="SemiBold"/>
-                <DatePicker Margin="0 4 0 8"/>
+                <DatePicker SelectedDate="{Binding SelectedDate}" Margin="0 4 0 8"/>
 
                 <TextBlock Text="Время (чч:мм)" FontWeight="SemiBold"/>
-                <TextBox Text="14:00" Margin="0 4 0 8"/>
+                <TextBox Text="{Binding SelectedTime}" Margin="0 4 0 8"/>
 
                 <TextBlock Text="Клиент" FontWeight="SemiBold"/>
-                <ComboBox Margin="0 2 0 6">
-                    <ComboBoxItem Content="Второв Алексей Владимирович"/>
-                    <ComboBoxItem Content="Второва Татьяна Александровна"/>
-                </ComboBox>
-                <Button Content="Новый клиент" Padding="10 6" Margin="0 0 0 8"/>
+                <ComboBox ItemsSource="{Binding Customers}"
+                          SelectedItem="{Binding SelectedCustomer}"
+                          DisplayMemberPath="FullName"
+                          Margin="0 2 0 6"/>
+                <Button Content="Новый клиент" Command="{Binding NewCustomerCommand}" Padding="10 6" Margin="0 0 0 8"/>
                 <TextBlock Text="ФИО" FontWeight="SemiBold"/>
-                <TextBox Margin="0 2 0 6"/>
+                <TextBox Text="{Binding CustomerName}" Margin="0 2 0 6"/>
                 <TextBlock Text="Телефон" FontWeight="SemiBold"/>
-                <TextBox Text="+7 (999) 123-45-67" Margin="0 2 0 6"/>
+                <TextBox Text="{Binding CustomerPhone}" Margin="0 2 0 6"/>
                 <TextBlock Text="Email" FontWeight="SemiBold"/>
-                <TextBox Text="client@example.com" Margin="0 2 0 8"/>
+                <TextBox Text="{Binding CustomerEmail}" Margin="0 2 0 8"/>
 
                 <TextBlock Text="Комментарий" FontWeight="SemiBold"/>
-                <TextBox AcceptsReturn="True" Height="60" TextWrapping="Wrap" Margin="0 4 0 10"/>
+                <TextBox Text="{Binding Notes}" AcceptsReturn="True" Height="60" TextWrapping="Wrap" Margin="0 4 0 10"/>
 
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 8 0 0">
-                    <Button Content="Записать клиента" Padding="12 6" Background="#244566" Foreground="White"/>
+                    <Button Content="Записать клиента" Command="{Binding BookCommand}" Padding="12 6" Background="#244566" Foreground="White"/>
                 </StackPanel>
             </StackPanel>
         </Border>
@@ -69,33 +64,20 @@
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
                     <TextBlock Text="Ближайшие тест-драйвы" FontWeight="SemiBold" FontSize="16" />
                 </StackPanel>
-                <StackPanel Margin="0 6 0 0">
-                    
-                    <Border BorderBrush="#E7ECF2" BorderThickness="0 0 0 1" Padding="6 8">
-                        <StackPanel>
-                            <TextBlock Text="15.01 14:00" FontWeight="Bold"/>
-                            <TextBlock Text="Toyota Camry - Комфорт" />
-                            <TextBlock Text="Второв Алексей" Foreground="#4D5A6A"/>
-                            <TextBlock Text="+7 (999) 123-45-67" Foreground="#4D5A6A"/>
-                        </StackPanel>
-                    </Border>
-                    <Border BorderBrush="#E7ECF2" BorderThickness="0 0 0 1" Padding="6 8">
-                        <StackPanel>
-                            <TextBlock Text="16.01 11:30" FontWeight="Bold"/>
-                            <TextBlock Text="Toyota RAV4 - Престиж" />
-                            <TextBlock Text="Второва Татьяна" Foreground="#4D5A6A"/>
-                            <TextBlock Text="+7 (999) 765-43-21" Foreground="#4D5A6A"/>
-                        </StackPanel>
-                    </Border>
-                    <Border BorderBrush="#E7ECF2" BorderThickness="0 0 0 1" Padding="6 8">
-                        <StackPanel>
-                            <TextBlock Text="17.01 16:00" FontWeight="Bold"/>
-                            <TextBlock Text="Toyota Corolla" />
-                            <TextBlock Text="Иванов Иван" Foreground="#4D5A6A"/>
-                            <TextBlock Text="+7 (999) 555-44-33" Foreground="#4D5A6A"/>
-                        </StackPanel>
-                    </Border>
-                </StackPanel>
+                <ItemsControl ItemsSource="{Binding Upcoming}" Margin="0 6 0 0">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border BorderBrush="#E7ECF2" BorderThickness="0 0 0 1" Padding="6 8">
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Slot, StringFormat='{}{0:dd.MM HH:mm}'}" FontWeight="Bold"/>
+                                    <TextBlock Text="{Binding Car}" />
+                                    <TextBlock Text="{Binding Customer}" Foreground="#4D5A6A"/>
+                                    <TextBlock Text="{Binding Phone}" Foreground="#4D5A6A"/>
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
             </StackPanel>
         </Border>
     </Grid>

@@ -1,11 +1,12 @@
 ﻿using Auto;
-using Auto.ViewModels;
-using Auto.Services.Interfaces;
 using Auto.Services;
+using Auto.Services.Interfaces;
+using Auto.ViewModels;
+using AutoSalonToyota.Services;
 using DAL.DbContext;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
 using Npgsql.EntityFrameworkCore.PostgreSQL;
 using System;
 using System.Windows;
@@ -71,8 +72,9 @@ namespace Auto
 
             services.AddSingleton<MainViewModel>();
             services.AddTransient<CatalogViewModel>();
-            
-           
+            services.AddScoped<ITestDriveService, TestDriveService>();
+            services.AddTransient<TestDriveViewModel>();
+
 
             services.AddSingleton<MainWindow>();
         }
