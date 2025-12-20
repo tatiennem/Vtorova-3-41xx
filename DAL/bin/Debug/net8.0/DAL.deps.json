@@ -9,8 +9,7 @@
       "DAL/1.0.0": {
         "dependencies": {
           "Aspire.Npgsql.EntityFrameworkCore.PostgreSQL": "9.4.0",
-          "DomainModel": "1.0.0",
-          "Interfaces": "1.0.0",
+          "Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.4",
           "Microsoft.EntityFrameworkCore.Design": "9.0.4",
           "Ninject": "3.3.6"
@@ -951,20 +950,9 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "DomainModel/1.0.0": {
+      "Domain/1.0.0": {
         "runtime": {
-          "DomainModel.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
-        }
-      },
-      "Interfaces/1.0.0": {
-        "dependencies": {
-          "DomainModel": "1.0.0"
-        },
-        "runtime": {
-          "Interfaces.dll": {
+          "Domain.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1475,12 +1463,7 @@
       "path": "system.threading.tasks/4.3.0",
       "hashPath": "system.threading.tasks.4.3.0.nupkg.sha512"
     },
-    "DomainModel/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Interfaces/1.0.0": {
+    "Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

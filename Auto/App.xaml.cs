@@ -1,57 +1,80 @@
-﻿using Ninject;
-using System.Windows;
+﻿using Auto;
+using Auto.ViewModels;
+using Auto.Services.Interfaces;
+using Auto.Services;
+using DAL.DbContext;
 using Microsoft.Extensions.Configuration;
-using System.IO;
-using DAL.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
+using System;
+using System.Windows;
 
 namespace Auto
 {
     public partial class App : Application
     {
-        private IKernel _kernel;
+        private ServiceProvider? _services;
 
-        protected override void OnStartup(StartupEventArgs e)
+        protected override async void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
 
-            // Загружаем конфигурацию
-          /*  var configuration = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(AppContext.BaseDirectory)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
                 .Build();
-          */
 
-            // Получаем строку подключения
-            var connectionString = "Host=localhost;Port=5432;Database=autosalon;Username=postgres;Password=123";
 
-            // Создаем ядро Ninject
-            _kernel = new StandardKernel();
 
-            // Загружаем модули в правильном порядке:
-            // 1. ServiceModule - для репозиториев (строка подключения)
-            _kernel.Load(new BLL.ServiceModule(connectionString));
+            var serviceCollection = new ServiceCollection();
+            ConfigureServices(serviceCollection, configuration);
 
-            // 2. NinjectRegistrations - для сервисов и ViewModels
-            _kernel.Load(new NinjectRegistrations());
+            _services = serviceCollection.BuildServiceProvider();
 
-            // Инициализируем БД (если нужно)
-            InitializeDatabase();
+            
 
-            // Создаем MainWindow с ViewModel
-            var mainWindow = new MainWindow
-            {
-                DataContext = _kernel.Get<ViewModels.CatalogViewModel>()
-            };
-
+            var mainWindow = _services.GetRequiredService<MainWindow>();
+            var mainVm = _services.GetRequiredService<MainViewModel>();
+            mainWindow.DataContext = mainVm;
+           
             mainWindow.Show();
         }
 
-        private void InitializeDatabase()
+        private static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
         {
-            // Если нужно создать БД или применить миграции
-            using var scope = _kernel.BeginBlock();
-            var repos = scope.Get<DAL.Interfaces.IDbRepos>();
-            // Можно вызвать метод инициализации если есть
+            services.AddSingleton(configuration);
+            services.AddDbContextFactory<AutoSalonContext>(options =>
+            {
+                var provider = configuration["Database:Provider"];
+                var connectionString = configuration["Database:ConnectionString"];
+
+                if (provider == "Postgres" && !string.IsNullOrEmpty(connectionString))
+                {
+                    // Для PostgreSQL
+                    options.UseNpgsql(connectionString);
+                }
+                
+            });
+
+            services.Configure<ContractOptions>(configuration.GetSection("Contracts"));
+
+            services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+            services.AddSingleton<INotificationService, NotificationService>();
+           
+
+           
+            services.AddScoped<ICatalogService, CatalogService>();
+            services.AddScoped<ISalesService, SalesService>();
+            
+            services.AddScoped<IContractService, ContractService>();
+
+            services.AddSingleton<MainViewModel>();
+            services.AddTransient<CatalogViewModel>();
+            
+           
+
+            services.AddSingleton<MainWindow>();
         }
     }
 }

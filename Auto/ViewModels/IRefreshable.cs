@@ -1,4 +1,6 @@
-﻿namespace Auto.ViewModels
+using System.Threading.Tasks;
+
+namespace Auto.ViewModels
 {
     public interface IRefreshable
     {

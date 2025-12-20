@@ -15,18 +15,14 @@
             <ColumnDefinition Width="1.3*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Фильтры (динамические из базы) -->
+        <!-- Filters -->
         <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Margin="0 0 0 12" VerticalAlignment="Center">
             <TextBlock Text="Каталог автомобилей" FontSize="24" FontWeight="SemiBold" Foreground="#0E1E2E" />
-            <ComboBox ItemsSource="{Binding ModelFilters}" 
-                      SelectedItem="{Binding ModelFilter}" 
-                      Width="160" Margin="20 0 0 0" Height="22"/>
-            <CheckBox Content="Только в наличии" 
-                      IsChecked="{Binding OnlyAvailable}" 
-                      VerticalAlignment="Center" Margin="12 0 0 0"/>
+            <ComboBox ItemsSource="{Binding ModelFilters}" SelectedItem="{Binding ModelFilter}" Width="160" Margin="20 0 0 0" Height="22"/>
+            <CheckBox Content="Только в наличии" IsChecked="{Binding OnlyAvailable}" VerticalAlignment="Center" Margin="12 0 0 0"/>
         </StackPanel>
 
-        <!-- Список машин (динамический из базы) -->
+        <!-- Cars list -->
         <ListBox Grid.Row="1" Grid.Column="0"
                  ItemsSource="{Binding Cars}"
                  SelectedItem="{Binding SelectedCar}"
@@ -42,25 +38,13 @@
                 <DataTemplate>
                     <Border Width="220" Height="200" Margin="6" Padding="8" CornerRadius="12" Background="White" BorderBrush="#E7ECF2" BorderThickness="1" >
                         <StackPanel>
-                            <!-- Изображение из базы -->
-                            <Image Height="95" Stretch="UniformToFill" 
-                                   Source="{Binding Image, Converter={StaticResource ByteArrayToImageConverter}}" />
-
-                            <!-- Модель из базы -->
+                            <Image Height="95" Stretch="UniformToFill" Source="{Binding Image, Converter={StaticResource ByteArrayToImageConverter}}" />
                             <TextBlock Text="{Binding Model}" FontWeight="SemiBold" FontSize="16" Margin="0 8 0 0"/>
-
-                            <!-- Комплектация из базы -->
                             <TextBlock Text="{Binding Trim}" Foreground="#5A6A7A" />
-
-                            <!-- Цвет из базы -->
                             <TextBlock Text="{Binding Color}" Foreground="#5A6A7A" />
-
-                            <!-- Статус наличия из базы -->
                             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0 6 0 0">
-                                <Ellipse Width="8" Height="8" 
-                                         Fill="{Binding InStock, Converter={StaticResource BooleanToBrushConverter}}" />
-                                <TextBlock Text="{Binding InStock, Converter={StaticResource StockStatusConverter}}" 
-                                           Margin="6 0 0 0" Foreground="#3E4A59"/>
+                                <Ellipse Width="8" Height="8" Fill="{Binding InStock, Converter={StaticResource BooleanToBrushConverter}}" />
+                                <TextBlock Text="{Binding InStock, Converter={StaticResource StockStatusConverter}}" Margin="6 0 0 0" Foreground="#3E4A59"/>
                             </StackPanel>
                         </StackPanel>
                     </Border>
@@ -68,11 +52,10 @@
             </ListBox.ItemTemplate>
         </ListBox>
 
-        <!-- Детали и продажа -->
+        <!-- Details and sale -->
         <Border Grid.Row="1" Grid.Column="1" Background="White" CornerRadius="12" Padding="16" BorderBrush="#E7ECF2" BorderThickness="1">
             <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
                 <StackPanel Margin="0,0,0,-7">
-                    <!-- Характеристики (динамические из базы) -->
                     <TextBlock Text="Характеристики" FontSize="18" FontWeight="SemiBold" />
                     <TextBlock Text="{Binding SelectedCar.Model}" FontWeight="Bold" FontSize="16" Margin="0 8 0 2"/>
                     <TextBlock Text="{Binding SelectedCar.Trim}" Foreground="#536273"/>
@@ -81,96 +64,74 @@
                     <TextBlock Text="{Binding SelectedCar.Color}" Foreground="#536273"/>
                     <Separator Margin="0 10 0 10"/>
 
-                    <!-- Доп. услуги (СТАТИЧНЫЕ) -->
                     <TextBlock Text="Доп. услуги" FontWeight="SemiBold"/>
-                    <ListBox BorderThickness="0"
-                             Background="Transparent"
-                             HorizontalContentAlignment="Stretch"
-                             Margin="0 4 0 8"
-                             Height="130">
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <CheckBox/>
-                            <StackPanel Margin="6 0 0 0">
-                                <TextBlock Text="Защитное покрытие" />
-                                <TextBlock Text="15 000 ₽" Foreground="#5F7184"/>
-                            </StackPanel>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
-                            <CheckBox/>
-                            <StackPanel Margin="6 0 0 0">
-                                <TextBlock Text="Тонировка" />
-                                <TextBlock Text="12 000 ₽" Foreground="#5F7184"/>
-                            </StackPanel>
-                        </StackPanel>
+                    <ListBox ItemsSource="{Binding ExtraServices}"
+                         BorderThickness="0"
+                         Background="Transparent"
+                         HorizontalContentAlignment="Stretch"
+                         Margin="0 4 0 8"
+                         Height="130">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                    <CheckBox IsChecked="{Binding IsSelected}"/>
+                                    <StackPanel Margin="6 0 0 0">
+                                        <TextBlock Text="{Binding Service.Name}" />
+                                        <TextBlock Text="{Binding Service.Price, StringFormat='{}{0:N0} ₽'}" Foreground="#5F7184"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
                     </ListBox>
 
-                    <!-- Скидка (СТАТИЧНАЯ) -->
                     <TextBlock Text="Скидка, %" FontWeight="SemiBold"/>
-                    <Slider Minimum="0" Maximum="20" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" />
-                    <TextBlock Text="Текущая скидка: 0%" Foreground="#536273" Margin="0 0 0 6"/>
+                    <Slider Minimum="0" Maximum="20" Value="{Binding DiscountPercent}" TickFrequency="1" IsSnapToTickEnabled="True" />
+                    <TextBlock Text="{Binding DiscountPercent, StringFormat='Текущая скидка: {0}%'}" Foreground="#536273" Margin="0 0 0 6"/>
 
-                    <!-- Цены (базовая цена динамическая, остальное статичное) -->
                     <StackPanel Orientation="Vertical" Margin="0 4 0 8">
-                        <TextBlock Text="{Binding SelectedCar.BasePrice, StringFormat='Базовая цена: {0:N0} ₽'}" />
-                        <TextBlock Text="Доп. услуги: 0 ₽" />
-                        <TextBlock Text="{Binding SelectedCar.BasePrice, StringFormat='Итого: {0:N0} ₽'}" FontWeight="Bold" FontSize="16"/>
+                        <TextBlock Text="{Binding BasePrice, StringFormat='Базовая цена: {0:N0} ₽'}" />
+                        <TextBlock Text="{Binding ExtrasTotal, StringFormat='Доп. услуги: {0:N0} ₽'}" />
+                        <TextBlock Text="{Binding FinalPrice, StringFormat='Итого: {0:N0} ₽'}" FontWeight="Bold" FontSize="16"/>
                     </StackPanel>
 
-                    <!-- Покупатель (СТАТИЧНЫЙ) -->
                     <Separator/>
                     <TextBlock Text="Покупатель" FontWeight="SemiBold" Margin="0 6 0 4"/>
                     <StackPanel Orientation="Vertical" Margin="0 2 0 0">
-                        <ComboBox Margin="0 0 0 6">
-                            <ComboBoxItem Content="Выберите покупателя"/>
-                        </ComboBox>
+                        <ComboBox ItemsSource="{Binding Customers}"
+                              SelectedItem="{Binding SelectedCustomer}"
+                              DisplayMemberPath="FullName"
+                              Margin="0 0 0 6"/>
                         <StackPanel Orientation="Horizontal" Margin="0 0 0 8">
-                            <Button Content="Новый клиент" Padding="10 6" />
+                            <Button Content="Новый клиент" Command="{Binding NewCustomerCommand}" Padding="10 6" />
                         </StackPanel>
                         <TextBlock Text="ФИО" FontWeight="SemiBold"/>
-                        <TextBox Margin="0 0 0 6" />
+                        <TextBox Text="{Binding CustomerName}" Margin="0 0 0 6" />
                         <TextBlock Text="Телефон" FontWeight="SemiBold"/>
-                        <TextBox Margin="0 0 0 6" />
+                        <TextBox Text="{Binding CustomerPhone}" Margin="0 0 0 6" />
                         <TextBlock Text="Email" FontWeight="SemiBold"/>
-                        <TextBox />
+                        <TextBox Text="{Binding CustomerEmail}" />
                     </StackPanel>
-                    <!-- Кнопка (СТАТИЧНАЯ) -->
-                    <Button Content="Оформить продажу" 
-                            Margin="0 12 0 0" 
-                            Padding="12,8" 
-                            Background="#244566" 
-                            Foreground="White" 
-                            Height="48" 
-                            Width="310" 
-                            HorizontalAlignment="Center" 
-                            HorizontalContentAlignment="Center" 
-                            VerticalContentAlignment="Center" />
+
+                    <Button Content="Оформить продажу" Command="{Binding PurchaseCommand}" Margin="0 12 0 0" Padding="12" Background="#244566" Foreground="White" Height="45" Width="310" />
                 </StackPanel>
             </ScrollViewer>
         </Border>
-        
-        <!-- Недавние продажи (СТАТИЧНЫЕ) -->
-        <Border Grid.Row="2" Grid.ColumnSpan="2" 
-                Background="White" 
-                CornerRadius="12" 
-                Padding="12" 
-                BorderBrush="#E7ECF2" 
-                BorderThickness="1" 
-                Margin="0 12 0 0">
+
+        <!-- Recent sales -->
+        <Border Grid.Row="2" Grid.ColumnSpan="2" Background="White" CornerRadius="12" Padding="12" BorderBrush="#E7ECF2" BorderThickness="1" Margin="0 12 0 0">
             <StackPanel>
                 <TextBlock Text="Недавние продажи" FontWeight="SemiBold" FontSize="16" />
-                <ItemsControl Margin="0 6 0 0">
-                    <StackPanel Orientation="Horizontal" Margin="0 4">
-                        <TextBlock Text="01.01" Width="70" Margin="0 0 10 0"/>
-                        <TextBlock Text="Toyota Camry" Width="240" Margin="0 0 10 0"/>
-                        <TextBlock Text="Иванов Иван" Width="180" Margin="0 0 10 0"/>
-                        <TextBlock Text="2 500 000 ₽" FontWeight="Bold" />
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal" Margin="0 4">
-                        <TextBlock Text="02.01" Width="70" Margin="0 0 10 0"/>
-                        <TextBlock Text="Toyota RAV4" Width="240" Margin="0 0 10 0"/>
-                        <TextBlock Text="Второв Алексей" Width="180" Margin="0 0 10 0"/>
-                        <TextBlock Text="3 200 000 ₽" FontWeight="Bold" />
-                    </StackPanel>
+                <ItemsControl ItemsSource="{Binding RecentSales}" Margin="0 6 0 0">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Margin="0 4">
+                                <TextBlock Text="{Binding Date, StringFormat='{}{0:dd.MM}'}" Width="70" Margin="0 0 10 0"/>
+                                <TextBlock Text="{Binding Car}" Width="240" Margin="0 0 10 0"/>
+                                <TextBlock Text="{Binding Customer}" Width="180" Margin="0 0 10 0"/>
+                                <TextBlock Text="{Binding TotalPrice, StringFormat='{}{0:N0} ₽'}" FontWeight="Bold" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
                 </ItemsControl>
             </StackPanel>
         </Border>
