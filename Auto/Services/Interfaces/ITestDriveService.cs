@@ -10,5 +10,6 @@ namespace Auto.Services.Interfaces
     {
         Task<TestDrive> CreateAsync(Car car, Customer customer, DateTime slot, string notes);
         Task<IReadOnlyList<TestDriveScheduleItem>> GetUpcomingAsync(int days);
+        Task CancelAsync(int testDriveId);
     }
 }

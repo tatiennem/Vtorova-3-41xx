@@ -68,12 +68,57 @@
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Border BorderBrush="#E7ECF2" BorderThickness="0 0 0 1" Padding="6 8">
-                                <StackPanel>
-                                    <TextBlock Text="{Binding Slot, StringFormat='{}{0:dd.MM HH:mm}'}" FontWeight="Bold"/>
-                                    <TextBlock Text="{Binding Car}" />
-                                    <TextBlock Text="{Binding Customer}" Foreground="#4D5A6A"/>
-                                    <TextBlock Text="{Binding Phone}" Foreground="#4D5A6A"/>
-                                </StackPanel>
+                                <!-- ИЗМЕНЕНИЕ 1: Замена StackPanel на Grid -->
+                                <Grid>
+                                    <!-- ИЗМЕНЕНИЕ 2: Добавление ColumnDefinitions -->
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <!-- ИЗМЕНЕНИЕ 3: Перенос StackPanel в первую колонку -->
+                                    <StackPanel Grid.Column="0">
+                                        <TextBlock Text="{Binding Slot, StringFormat='{}{0:dd.MM HH:mm}'}" FontWeight="Bold"/>
+                                        <TextBlock Text="{Binding Car}" />
+                                        <TextBlock Text="{Binding Customer}" Foreground="#4D5A6A"/>
+                                        <TextBlock Text="{Binding Phone}" Foreground="#4D5A6A"/>
+                                    </StackPanel>
+
+                                    <!-- ИЗМЕНЕНИЕ 4: Добавление кнопки удаления -->
+                                    <Button Grid.Column="1" 
+                                    Command="{Binding DataContext.CancelTestDriveCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
+                                    CommandParameter="{Binding}"
+                                    Content="Отменить"
+                                    Background="#FF5252"
+                                    Foreground="White"
+                                    Padding="8 4"
+                                    Margin="10 0 0 0"
+                                    Cursor="Hand">
+                                        <Button.Style>
+                                            <Style TargetType="Button">
+                                                <Setter Property="Template">
+                                                    <Setter.Value>
+                                                        <ControlTemplate TargetType="Button">
+                                                            <Border Background="{TemplateBinding Background}" 
+                                                            CornerRadius="6"
+                                                            Padding="{TemplateBinding Padding}">
+                                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                            </Border>
+                                                        </ControlTemplate>
+                                                    </Setter.Value>
+                                                </Setter>
+                                                <Style.Triggers>
+                                                    <Trigger Property="IsMouseOver" Value="True">
+                                                        <Setter Property="Background" Value="#E53935"/>
+                                                    </Trigger>
+                                                    <Trigger Property="IsPressed" Value="True">
+                                                        <Setter Property="Background" Value="#C62828"/>
+                                                    </Trigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Button.Style>
+                                    </Button>
+                                </Grid>
                             </Border>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>

@@ -18,6 +18,7 @@ namespace Domain.Dto
 
     public class TestDriveScheduleItem
     {
+        public int Id { get; set; }
         public DateTime Slot { get; set; }
         public string Car { get; set; } = string.Empty;
         public string Customer { get; set; } = string.Empty;

@@ -70,6 +70,20 @@ namespace Auto.Services
             return entity;
         }
 
+        public async Task CancelAsync(int testDriveId)
+        {
+            await using var db = await _factory.CreateDbContextAsync();
+
+            var testDrive = await db.TestDrives
+                .FirstOrDefaultAsync(t => t.Id == testDriveId);
+
+            if (testDrive == null)
+                throw new InvalidOperationException("Тест-драйв не найден");
+
+            db.TestDrives.Remove(testDrive);
+            await db.SaveChangesAsync();
+        }
+
         public async Task<IReadOnlyList<TestDriveScheduleItem>> GetUpcomingAsync(int days)
         {
             var from = _clock.Today;
@@ -86,6 +100,7 @@ namespace Auto.Services
 
             return items.Select(t => new TestDriveScheduleItem
             {
+                Id = t.Id,
                 Slot = DateTime.SpecifyKind(t.Slot, DateTimeKind.Utc).ToLocalTime(),
                 Car = $"{t.Car.Model.Name} {t.Car.Color}",
                 Customer = t.Customer.FullName,

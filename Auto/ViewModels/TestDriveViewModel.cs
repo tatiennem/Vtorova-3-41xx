@@ -29,6 +29,7 @@ namespace Auto.ViewModels
 
         public ObservableCollection<CarInfoDto> Cars { get; } = new();
         public ObservableCollection<TestDriveScheduleItem> Upcoming { get; } = new();
+        public IRelayCommand<TestDriveScheduleItem> CancelTestDriveCommand { get; } 
         public ObservableCollection<Customer> Customers { get; } = new();
 
         public IAsyncRelayCommand BookCommand { get; }
@@ -45,6 +46,24 @@ namespace Auto.ViewModels
 
             BookCommand = new AsyncRelayCommand(BookAsync);
             NewCustomerCommand = new RelayCommand(ClearCustomer);
+
+            CancelTestDriveCommand = new AsyncRelayCommand<TestDriveScheduleItem>(CancelTestDriveAsync);
+        }
+
+        private async Task CancelTestDriveAsync(TestDriveScheduleItem? testDriveItem)
+        {
+            if (testDriveItem == null) return;
+
+            try
+            {
+                await _testDriveService.CancelAsync(testDriveItem.Id);
+                await _notifications.ShowInfoAsync($"Тест-драйв отменен: {testDriveItem.Car} - {testDriveItem.Customer}");
+                await RefreshAsync();
+            }
+            catch (Exception ex)
+            {
+                await _notifications.ShowErrorAsync($"Ошибка отмены: {ex.Message}");
+            }
         }
 
         partial void OnSelectedCarChanged(CarInfoDto? value)
