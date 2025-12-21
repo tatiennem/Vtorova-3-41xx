@@ -121,7 +121,7 @@ namespace Auto.Services
             };
         }
 
-        public async Task<IReadOnlyList<SaleSnapshotDto>> GetSalesAsync(int take = 30)
+        public async Task<IReadOnlyList<SaleSnapshotDto>> GetSalesAsync(int take = 100)
         {
             await using var db = await _factory.CreateDbContextAsync();
 

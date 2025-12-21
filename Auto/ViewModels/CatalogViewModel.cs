@@ -29,13 +29,31 @@ namespace Auto.ViewModels
         [ObservableProperty] private string _modelFilter = "Все модели";
         [ObservableProperty] private bool _onlyAvailable = true;
 
+        private DateTime? _startDateFilter;
+        public DateTime? StartDateFilter
+        {
+            get => _startDateFilter;
+            set => SetProperty(ref _startDateFilter, value);
+        }
+
+        private DateTime? _endDateFilter;
+        public DateTime? EndDateFilter
+        {
+            get => _endDateFilter;
+            set => SetProperty(ref _endDateFilter, value);
+        }
+
+
+        public IRelayCommand ApplyDateFilterCommand { get; }
+        public IRelayCommand ClearDateFilterCommand { get; }
+
         private PriceBreakdown? _price;
         private bool _isRefreshing;
         private bool _isPurchasing;
 
         public ObservableCollection<CarInfoDto> Cars { get; } = new();
         public ObservableCollection<ExtraServiceSelection> ExtraServices { get; } = new();
-        public ObservableCollection<SaleSnapshotDto> RecentSales { get; } = new();
+        public ObservableCollection<SaleSnapshotDto> FilteredRecentSales { get; } = new();
         public ObservableCollection<string> ModelFilters { get; } = new();
         public ObservableCollection<Customer> Customers { get; } = new();
 
@@ -54,7 +72,11 @@ namespace Auto.ViewModels
             PurchaseCommand = new AsyncRelayCommand(PurchaseAsync);
             NewCustomerCommand = new RelayCommand(ClearCustomer);
 
+            ApplyDateFilterCommand = new RelayCommand(ApplyFilter);
+            ClearDateFilterCommand = new RelayCommand(ClearFilter);
 
+            StartDateFilter = DateTime.Now.AddDays(-30);
+            EndDateFilter = DateTime.Now;
         }
 
         partial void OnSelectedCarChanged(CarInfoDto? value)
@@ -143,12 +165,38 @@ namespace Auto.ViewModels
                     ExtraServices.Add(vm);
                 }
 
-                var sales = await _salesService.GetSalesAsync(12);
-                RecentSales.Clear();
-                foreach (var sale in sales)
+                var allSales = await _salesService.GetSalesAsync(100);
+                FilteredRecentSales.Clear();
+                foreach (var sale in allSales)
                 {
-                    RecentSales.Add(sale);
+                    bool include = true;
+
+                    
+                    if (StartDateFilter.HasValue)
+                    {
+                        // Если продажа раньше начальной даты - исключаем
+                        if (sale.Date.Date < StartDateFilter.Value.Date)
+                        {
+                            include = false;
+                        }
+                    }
+
+                    
+                    if (EndDateFilter.HasValue && include) // Только если еще не исключили
+                    {
+                        // Если продажа позже конечной даты - исключаем
+                        if (sale.Date.Date > EndDateFilter.Value.Date)
+                        {
+                            include = false;
+                        }
+                    }
+
+                    if (include)
+                    {
+                        FilteredRecentSales.Add(sale);
+                    }
                 }
+
             }
             finally
             {
@@ -241,6 +289,28 @@ namespace Auto.ViewModels
             CustomerName = string.Empty;
             CustomerPhone = string.Empty;
             CustomerEmail = string.Empty;
+        }
+
+        private void ApplyFilter()
+        {
+            try
+            {
+                // Перезагружаем данные с фильтром
+                RefreshAsync(true).ConfigureAwait(false);
+            }
+            catch (Exception ex)
+            {
+                // Если ошибка - просто игнорируем
+            }
+        }
+
+        private void ClearFilter()
+        {
+            StartDateFilter = null;
+            EndDateFilter = null;
+
+            // Перезагружаем без фильтра
+            RefreshAsync(true).ConfigureAwait(false);
         }
     }
 }

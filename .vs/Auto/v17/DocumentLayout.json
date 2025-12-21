@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "D:\\1-41\\Auto\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|d:\\1-41\\auto\\dal\\dbcontext\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|solutionrelative:dal\\dbcontext\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\views\\catalogview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\views\\catalogview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\viewmodels\\catalogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\viewmodels\\catalogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|d:\\1-41\\auto\\domain\\dto\\carinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\carinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|d:\\1-41\\auto\\domain\\dto\\pricebreakdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\pricebreakdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|d:\\1-41\\auto\\domain\\dto\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|d:\\1-41\\auto\\domain\\dto\\salesnapshotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\salesnapshotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\interfaces\\isalesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\interfaces\\isalesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\interfaces\\icontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\interfaces\\icontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|d:\\1-41\\auto\\dal\\dbcontext\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|solutionrelative:dal\\dbcontext\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,10 +73,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|d:\\1-41\\auto\\dal\\dbcontext\\databaseproviderresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{194E08D9-7005-459A-87BC-DA9478ABB00D}|DAL\\DAL.csproj|solutionrelative:dal\\dbcontext\\databaseproviderresolver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|d:\\1-41\\auto\\domain\\entities\\enginespec.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\views\\reportsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\views\\reportsview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\views\\catalogview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\views\\catalogview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\viewmodels\\navigationitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,28 +135,8 @@
       "RelativeMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|d:\\1-41\\auto\\domain\\dto\\salesnapshotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\salesnapshotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|d:\\1-41\\auto\\domain\\dto\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\reportdtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|d:\\1-41\\auto\\domain\\dto\\pricebreakdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\pricebreakdown.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|d:\\1-41\\auto\\domain\\dto\\carinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5715D3CF-1658-4C98-A6E3-321F5655AFBF}|Domain\\Domain.csproj|solutionrelative:domain\\dto\\carinfodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\interfaces\\itestdriveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\interfaces\\itestdriveservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\viewmodels\\catalogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\viewmodels\\catalogviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\interfaces\\icatalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -147,10 +159,6 @@
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\viewmodels\\irefreshable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\salesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -171,20 +179,12 @@
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\converters\\booleantobrushconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\interfaces\\icontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\interfaces\\icontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\interfaces\\idatetimeprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\interfaces\\idatetimeprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\interfaces\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\services\\interfaces\\isalesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|solutionrelative:auto\\services\\interfaces\\isalesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6B28F9F9-C827-4313-834A-274FC9EFFA25}|Auto\\Auto.csproj|d:\\1-41\\auto\\auto\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -234,7 +234,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -246,19 +246,173 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ContractOptions.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\ContractOptions.cs",
-              "RelativeDocumentMoniker": "Domain\\ContractOptions.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Domain\\ContractOptions.cs",
-              "RelativeToolTip": "Domain\\ContractOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "CatalogViewModel.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\ViewModels\\CatalogViewModel.cs",
+              "RelativeDocumentMoniker": "Auto\\ViewModels\\CatalogViewModel.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\ViewModels\\CatalogViewModel.cs",
+              "RelativeToolTip": "Auto\\ViewModels\\CatalogViewModel.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAkwE4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T19:19:19.519Z"
+              "WhenOpened": "2025-12-20T15:03:26.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarInfoDto.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Dto\\CarInfoDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Dto\\CarInfoDto.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Domain\\Dto\\CarInfoDto.cs",
+              "RelativeToolTip": "Domain\\Dto\\CarInfoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T14:24:45.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SalesService.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\SalesService.cs",
+              "RelativeDocumentMoniker": "Auto\\Services\\SalesService.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\SalesService.cs",
+              "RelativeToolTip": "Auto\\Services\\SalesService.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAqwHsAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T14:40:05.388Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CatalogView.xaml",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\CatalogView.xaml",
+              "RelativeDocumentMoniker": "Auto\\Views\\CatalogView.xaml",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\Views\\CatalogView.xaml",
+              "RelativeToolTip": "Auto\\Views\\CatalogView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-20T13:56:39.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PriceBreakdown.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Dto\\PriceBreakdown.cs",
+              "RelativeDocumentMoniker": "Domain\\Dto\\PriceBreakdown.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Domain\\Dto\\PriceBreakdown.cs",
+              "RelativeToolTip": "Domain\\Dto\\PriceBreakdown.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T14:36:22.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReportDtos.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Dto\\ReportDtos.cs",
+              "RelativeDocumentMoniker": "Domain\\Dto\\ReportDtos.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Domain\\Dto\\ReportDtos.cs",
+              "RelativeToolTip": "Domain\\Dto\\ReportDtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T17:25:59.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SaleSnapshotDto.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Dto\\SaleSnapshotDto.cs",
+              "RelativeDocumentMoniker": "Domain\\Dto\\SaleSnapshotDto.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Domain\\Dto\\SaleSnapshotDto.cs",
+              "RelativeToolTip": "Domain\\Dto\\SaleSnapshotDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T14:24:56.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CatalogService.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\CatalogService.cs",
+              "RelativeDocumentMoniker": "Auto\\Services\\CatalogService.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\CatalogService.cs",
+              "RelativeToolTip": "Auto\\Services\\CatalogService.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwGEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T14:28:37.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ISalesService.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\ISalesService.cs",
+              "RelativeDocumentMoniker": "Auto\\Services\\Interfaces\\ISalesService.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\ISalesService.cs",
+              "RelativeToolTip": "Auto\\Services\\Interfaces\\ISalesService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T14:08:55.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ContractService.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\ContractService.cs",
+              "RelativeDocumentMoniker": "Auto\\Services\\ContractService.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\ContractService.cs",
+              "RelativeToolTip": "Auto\\Services\\ContractService.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAuwIUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T15:12:40.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IContractService.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\IContractService.cs",
+              "RelativeDocumentMoniker": "Auto\\Services\\Interfaces\\IContractService.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\IContractService.cs",
+              "RelativeToolTip": "Auto\\Services\\Interfaces\\IContractService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T14:07:43.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Auto\\App.xaml.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Auto\\App.xaml.cs",
+              "RelativeToolTip": "Auto\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T14:46:12.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AutoSalonContext.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\DAL\\DbContext\\AutoSalonContext.cs",
+              "RelativeDocumentMoniker": "DAL\\DbContext\\AutoSalonContext.cs",
+              "ToolTip": "D:\\1-41\\Auto\\DAL\\DbContext\\AutoSalonContext.cs",
+              "RelativeToolTip": "DAL\\DbContext\\AutoSalonContext.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T13:58:15.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "DbInitializer.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\DAL\\DbContext\\DbInitializer.cs",
               "RelativeDocumentMoniker": "DAL\\DbContext\\DbInitializer.cs",
@@ -271,43 +425,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AutoSalonContext.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\DAL\\DbContext\\AutoSalonContext.cs",
-              "RelativeDocumentMoniker": "DAL\\DbContext\\AutoSalonContext.cs",
-              "ToolTip": "D:\\1-41\\Auto\\DAL\\DbContext\\AutoSalonContext.cs",
-              "RelativeToolTip": "DAL\\DbContext\\AutoSalonContext.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "ContractOptions.cs",
+              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\ContractOptions.cs",
+              "RelativeDocumentMoniker": "Domain\\ContractOptions.cs",
+              "ToolTip": "D:\\1-41\\Auto\\Domain\\ContractOptions.cs",
+              "RelativeToolTip": "Domain\\ContractOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T13:58:15.068Z"
+              "WhenOpened": "2025-12-20T19:19:19.519Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\App.xaml.cs",
-              "RelativeDocumentMoniker": "Auto\\App.xaml.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Auto\\App.xaml.cs",
-              "RelativeToolTip": "Auto\\App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:46:12.325Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ContractService.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\ContractService.cs",
-              "RelativeDocumentMoniker": "Auto\\Services\\ContractService.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\ContractService.cs",
-              "RelativeToolTip": "Auto\\Services\\ContractService.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T15:12:40.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\appsettings.json",
               "RelativeDocumentMoniker": "Auto\\appsettings.json",
@@ -319,7 +449,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 16,
               "Title": "DatabaseOptions.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\DAL\\DbContext\\DatabaseOptions.cs",
               "RelativeDocumentMoniker": "DAL\\DbContext\\DatabaseOptions.cs",
@@ -331,7 +461,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 17,
               "Title": "DatabaseProviderResolver.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\DAL\\DbContext\\DatabaseProviderResolver.cs",
               "RelativeDocumentMoniker": "DAL\\DbContext\\DatabaseProviderResolver.cs",
@@ -343,7 +473,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "Auto\\ViewModels\\MainViewModel.cs",
@@ -355,7 +485,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 25,
               "Title": "NavigationItem.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\ViewModels\\NavigationItem.cs",
               "RelativeDocumentMoniker": "Auto\\ViewModels\\NavigationItem.cs",
@@ -367,19 +497,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CatalogService.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\CatalogService.cs",
-              "RelativeDocumentMoniker": "Auto\\Services\\CatalogService.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\CatalogService.cs",
-              "RelativeToolTip": "Auto\\Services\\CatalogService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAWwCkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:28:37.811Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "ReportsView.xaml.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\ReportsView.xaml.cs",
               "RelativeDocumentMoniker": "Auto\\Views\\ReportsView.xaml.cs",
@@ -391,18 +509,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CatalogView.xaml",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\CatalogView.xaml",
-              "RelativeDocumentMoniker": "Auto\\Views\\CatalogView.xaml",
-              "ToolTip": "D:\\1-41\\Auto\\Auto\\Views\\CatalogView.xaml",
-              "RelativeToolTip": "Auto\\Views\\CatalogView.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-20T13:56:39.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "EngineSpec.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Entities\\EngineSpec.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\EngineSpec.cs",
@@ -414,7 +521,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "CatalogView.xaml.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\CatalogView.xaml.cs",
               "RelativeDocumentMoniker": "Auto\\Views\\CatalogView.xaml.cs",
@@ -426,18 +533,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 22,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\App.xaml",
               "RelativeDocumentMoniker": "Auto\\App.xaml",
               "ToolTip": "D:\\1-41\\Auto\\Auto\\App.xaml",
               "RelativeToolTip": "Auto\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-12-20T14:44:48.944Z"
+              "WhenOpened": "2025-12-20T14:44:48.944Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 23,
               "Title": "TestDriveView.xaml",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\TestDriveView.xaml",
               "RelativeDocumentMoniker": "Auto\\Views\\TestDriveView.xaml",
@@ -448,7 +556,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
               "Title": "ReportsView.xaml",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\ReportsView.xaml",
               "RelativeDocumentMoniker": "Auto\\Views\\ReportsView.xaml",
@@ -459,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Auto\\MainWindow.xaml",
@@ -470,7 +578,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "TestDriveService.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\TestDriveService.cs",
               "RelativeDocumentMoniker": "Auto\\Services\\TestDriveService.cs",
@@ -482,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 28,
               "Title": "TestDriveViewModel.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\ViewModels\\TestDriveViewModel.cs",
               "RelativeDocumentMoniker": "Auto\\ViewModels\\TestDriveViewModel.cs",
@@ -494,7 +602,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 29,
               "Title": "ReportsViewModel.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\ViewModels\\ReportsViewModel.cs",
               "RelativeDocumentMoniker": "Auto\\ViewModels\\ReportsViewModel.cs",
@@ -506,7 +614,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 30,
               "Title": "ReportService.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\ReportService.cs",
               "RelativeDocumentMoniker": "Auto\\Services\\ReportService.cs",
@@ -518,7 +626,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 31,
               "Title": "IReportService.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\IReportService.cs",
               "RelativeDocumentMoniker": "Auto\\Services\\Interfaces\\IReportService.cs",
@@ -530,43 +638,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "PriceBreakdown.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Dto\\PriceBreakdown.cs",
-              "RelativeDocumentMoniker": "Domain\\Dto\\PriceBreakdown.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Domain\\Dto\\PriceBreakdown.cs",
-              "RelativeToolTip": "Domain\\Dto\\PriceBreakdown.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:36:22.909Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ReportDtos.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Dto\\ReportDtos.cs",
-              "RelativeDocumentMoniker": "Domain\\Dto\\ReportDtos.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Domain\\Dto\\ReportDtos.cs",
-              "RelativeToolTip": "Domain\\Dto\\ReportDtos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T17:25:59.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "SaleSnapshotDto.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Dto\\SaleSnapshotDto.cs",
-              "RelativeDocumentMoniker": "Domain\\Dto\\SaleSnapshotDto.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Domain\\Dto\\SaleSnapshotDto.cs",
-              "RelativeToolTip": "Domain\\Dto\\SaleSnapshotDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:24:56.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 32,
               "Title": "Car.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Entities\\Car.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Car.cs",
@@ -578,19 +650,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CarInfoDto.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Domain\\Dto\\CarInfoDto.cs",
-              "RelativeDocumentMoniker": "Domain\\Dto\\CarInfoDto.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Domain\\Dto\\CarInfoDto.cs",
-              "RelativeToolTip": "Domain\\Dto\\CarInfoDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:24:45.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "ITestDriveService.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\ITestDriveService.cs",
               "RelativeDocumentMoniker": "Auto\\Services\\Interfaces\\ITestDriveService.cs",
@@ -602,19 +662,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CatalogViewModel.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\ViewModels\\CatalogViewModel.cs",
-              "RelativeDocumentMoniker": "Auto\\ViewModels\\CatalogViewModel.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Auto\\ViewModels\\CatalogViewModel.cs",
-              "RelativeToolTip": "Auto\\ViewModels\\CatalogViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T15:03:26.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 34,
               "Title": "ICatalogService.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\ICatalogService.cs",
               "RelativeDocumentMoniker": "Auto\\Services\\Interfaces\\ICatalogService.cs",
@@ -626,7 +674,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 35,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Auto\\MainWindow.xaml.cs",
@@ -638,7 +686,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 36,
               "Title": "TestDriveView.xaml.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Views\\TestDriveView.xaml.cs",
               "RelativeDocumentMoniker": "Auto\\Views\\TestDriveView.xaml.cs",
@@ -650,7 +698,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 37,
               "Title": "ExtraServiceSelection.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\ViewModels\\ExtraServiceSelection.cs",
               "RelativeDocumentMoniker": "Auto\\ViewModels\\ExtraServiceSelection.cs",
@@ -662,7 +710,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 38,
               "Title": "IRefreshable.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\ViewModels\\IRefreshable.cs",
               "RelativeDocumentMoniker": "Auto\\ViewModels\\IRefreshable.cs",
@@ -674,19 +722,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "SalesService.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\SalesService.cs",
-              "RelativeDocumentMoniker": "Auto\\Services\\SalesService.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\SalesService.cs",
-              "RelativeToolTip": "Auto\\Services\\SalesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:40:05.388Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "NotificationService.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\NotificationService.cs",
               "RelativeDocumentMoniker": "Auto\\Services\\NotificationService.cs",
@@ -698,7 +734,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "DateTimeProvider.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\DateTimeProvider.cs",
               "RelativeDocumentMoniker": "Auto\\Services\\DateTimeProvider.cs",
@@ -710,7 +746,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "StockStatusConverter.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Converters\\StockStatusConverter.cs",
               "RelativeDocumentMoniker": "Auto\\Converters\\StockStatusConverter.cs",
@@ -722,7 +758,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "ByteArrayToImageConverter.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Converters\\ByteArrayToImageConverter.cs",
               "RelativeDocumentMoniker": "Auto\\Converters\\ByteArrayToImageConverter.cs",
@@ -734,19 +770,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "IContractService.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\IContractService.cs",
-              "RelativeDocumentMoniker": "Auto\\Services\\Interfaces\\IContractService.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\IContractService.cs",
-              "RelativeToolTip": "Auto\\Services\\Interfaces\\IContractService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:07:43.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "IDateTimeProvider.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\IDateTimeProvider.cs",
               "RelativeDocumentMoniker": "Auto\\Services\\Interfaces\\IDateTimeProvider.cs",
@@ -758,7 +782,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "BooleanToBrushConverter.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Converters\\BooleanToBrushConverter.cs",
               "RelativeDocumentMoniker": "Auto\\Converters\\BooleanToBrushConverter.cs",
@@ -770,7 +794,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "INotificationService.cs",
               "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\INotificationService.cs",
               "RelativeDocumentMoniker": "Auto\\Services\\Interfaces\\INotificationService.cs",
@@ -779,18 +803,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-20T14:08:34.355Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "ISalesService.cs",
-              "DocumentMoniker": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\ISalesService.cs",
-              "RelativeDocumentMoniker": "Auto\\Services\\Interfaces\\ISalesService.cs",
-              "ToolTip": "D:\\1-41\\Auto\\Auto\\Services\\Interfaces\\ISalesService.cs",
-              "RelativeToolTip": "Auto\\Services\\Interfaces\\ISalesService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T14:08:55.849Z"
             },
             {
               "$type": "Document",

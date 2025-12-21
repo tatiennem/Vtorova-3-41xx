@@ -10,6 +10,7 @@ using Microsoft.Extensions.Options;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;
+using System.Diagnostics;
 
 namespace Auto.Services
 {
@@ -123,6 +124,28 @@ namespace Auto.Services
                         });
                 });
             }).GeneratePdf(path);
+
+            try
+            {
+                // PDF в программе по умолчанию
+                var processStartInfo = new System.Diagnostics.ProcessStartInfo(path)
+                {
+                    UseShellExecute = true,
+                    Verb = "open" 
+                };
+                System.Diagnostics.Process.Start(processStartInfo);
+            }
+            catch (Exception ex)
+            {
+                // Если не получилось, показываем путь к файлу
+                System.Windows.MessageBox.Show(
+                    $"PDF создан, но не удалось открыть автоматически.\n\n" +
+                    $"Файл сохранен по пути:\n{path}\n\n" +
+                    $"Ошибка: {ex.Message}",
+                    "Договор создан",
+                    System.Windows.MessageBoxButton.OK,
+                    System.Windows.MessageBoxImage.Information);
+            }
 
             return Task.FromResult(path);
         }
