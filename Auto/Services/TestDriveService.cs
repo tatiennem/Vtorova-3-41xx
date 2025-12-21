@@ -84,17 +84,14 @@ namespace Auto.Services
             await db.SaveChangesAsync();
         }
 
-        public async Task<IReadOnlyList<TestDriveScheduleItem>> GetUpcomingAsync(int days)
+        public async Task<IReadOnlyList<TestDriveScheduleItem>> GetUpcomingAsync()
         {
-            var from = _clock.Today;
-            var to = from.AddDays(days);
-
             await using var db = await _factory.CreateDbContextAsync();
 
             var items = await db.TestDrives
                 .Include(t => t.Car).ThenInclude(c => c.Model)
                 .Include(t => t.Customer)
-                .Where(t => t.Slot >= from && t.Slot <= to)
+                .Where(t => t.Slot >= _clock.Today) // Все начиная с сегодня
                 .OrderBy(t => t.Slot)
                 .ToListAsync();
 

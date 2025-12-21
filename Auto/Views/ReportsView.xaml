@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Auto.Views"
              mc:Ignorable="d">
     <Grid>
         <Grid.RowDefinitions>
@@ -14,51 +15,113 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
+        <!-- Заголовок -->
         <StackPanel Grid.ColumnSpan="2" Orientation="Horizontal" VerticalAlignment="Center" Margin="0 0 0 10">
             <TextBlock Text="Отчеты" FontSize="22" FontWeight="SemiBold" Foreground="#0E1E2E"/>
             <TextBlock Text="Период, мес." VerticalAlignment="Center" Margin="12 0 4 0"/>
             <TextBox Text="{Binding Months}" Width="50" Margin="0 0 8 0" Height="18"/>
         </StackPanel>
 
+       
         <Border Grid.Row="1" Grid.Column="0" Margin="0 0 12 0" Background="White" Padding="12" CornerRadius="10" BorderBrush="#E7ECF2" BorderThickness="1">
             <StackPanel>
                 <TextBlock Text="Продажи по месяцам" FontWeight="SemiBold" FontSize="16"/>
-                <DataGrid ItemsSource="{Binding MonthlySales}" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserAddRows="False" Margin="0 6 0 0" IsReadOnly="True">
+                <DataGrid ItemsSource="{Binding MonthlySales}" AutoGenerateColumns="False" 
+                          HeadersVisibility="Column" CanUserAddRows="False" Margin="0 6 0 0" 
+                          IsReadOnly="True" MaxHeight="300">
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding Period}" Header="Месяц" Width="*"/>
-                        <DataGridTextColumn Binding="{Binding CarsSold}" Header="Авто" Width="*"/>
-                        <DataGridTextColumn Binding="{Binding Revenue, StringFormat='{}{0:N0} ₽'}" Header="Выручка" Width="*"/>
+                        <DataGridTextColumn Binding="{Binding CarsSold}" Header="Авто" Width="80"/>
+                        <DataGridTextColumn Binding="{Binding Revenue, StringFormat='{}{0:N0} ₽'}" 
+                                           Header="Выручка" Width="120"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </StackPanel>
         </Border>
 
+        
         <Border Grid.Row="1" Grid.Column="1" Background="White" Padding="12" CornerRadius="10" BorderBrush="#E7ECF2" BorderThickness="1">
             <StackPanel>
-                <TextBlock Text="ТОП моделей" FontWeight="SemiBold" FontSize="16"/>
-                <DataGrid ItemsSource="{Binding ModelSales}" AutoGenerateColumns="False" HeadersVisibility="Column" CanUserAddRows="False" Margin="0 6 0 10" IsReadOnly="True">
+                <!-- Заголовок с текущим месяцем -->
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 5">
+                    <TextBlock Text="Выручка по моделям за " FontWeight="SemiBold" FontSize="16"/>
+                    <TextBlock Text="{Binding CurrentMonth}" FontWeight="SemiBold" FontSize="16" Foreground="#2196F3"/>
+                </StackPanel>
+
+                <!-- Статистика месяца -->
+                <WrapPanel Margin="0 10 0 15">
+                    <Border Background="#E8F5E9" Padding="10" CornerRadius="6" Margin="0 0 10 5">
+                        <StackPanel>
+                            <TextBlock Text="Общая выручка" FontSize="11" Foreground="#388E3C"/>
+                            <TextBlock Text="{Binding TotalMonthRevenue, StringFormat='{}{0:N0} ₽'}" 
+                                      FontWeight="Bold" FontSize="14"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="#FFF3E0" Padding="10" CornerRadius="6" Margin="0 0 10 5">
+                        <StackPanel>
+                            <TextBlock Text="Продано авто" FontSize="11" Foreground="#F57C00"/>
+                            <TextBlock Text="{Binding TotalMonthSales}" 
+                                      FontWeight="Bold" FontSize="14"/>
+                        </StackPanel>
+                    </Border>
+
+                    <Border Background="#E3F2FD" Padding="10" CornerRadius="6" Margin="0 0 10 5">
+                        <StackPanel>
+                            <TextBlock Text="Топ-модель" FontSize="11" Foreground="#1976D2"/>
+                            <TextBlock Text="{Binding TopModelThisMonth}" 
+                                      FontWeight="Bold" FontSize="12" MaxWidth="120" TextTrimming="CharacterEllipsis"/>
+                        </StackPanel>
+                    </Border>
+                </WrapPanel>
+
+                <!-- Таблица с моделями -->
+                <DataGrid ItemsSource="{Binding ModelsThisMonth}" AutoGenerateColumns="False" 
+                          HeadersVisibility="Column" CanUserAddRows="False" 
+                          IsReadOnly="True" MaxHeight="350">
                     <DataGrid.Columns>
                         <DataGridTextColumn Binding="{Binding Model}" Header="Модель" Width="*"/>
-                        <DataGridTextColumn Binding="{Binding Sold}" Header="Продано" Width="*"/>
-                        <DataGridTextColumn Binding="{Binding Revenue, StringFormat='{}{0:N0} ₽'}" Header="Выручка" Width="*"/>
+
+                        <DataGridTextColumn Binding="{Binding Sold}" Header="Продано" Width="70">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Center"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding Revenue, StringFormat='{}{0:N0} ₽'}" 
+                                           Header="Выручка" Width="100">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Right"/>
+                                    <Setter Property="FontWeight" Value="SemiBold"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding AveragePrice, StringFormat='{}{0:N0} ₽'}" 
+                                           Header="Средний чек" Width="100">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Right"/>
+                                    <Setter Property="Foreground" Value="#666"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
+
+                        <DataGridTextColumn Binding="{Binding Percentage, StringFormat='{}{0:F1}%'}" 
+                                           Header="Доля" Width="70">
+                            <DataGridTextColumn.ElementStyle>
+                                <Style TargetType="TextBlock">
+                                    <Setter Property="HorizontalAlignment" Value="Right"/>
+                                    <Setter Property="Foreground" Value="#2196F3"/>
+                                </Style>
+                            </DataGridTextColumn.ElementStyle>
+                        </DataGridTextColumn>
                     </DataGrid.Columns>
                 </DataGrid>
 
-                <TextBlock Text="Ближайшие тест-драйвы (30 дней)" FontWeight="SemiBold" FontSize="14"/>
-                <ItemsControl ItemsSource="{Binding UpcomingTestDrives}" Margin="0 6 0 0">
-                    <ItemsControl.ItemTemplate>
-                        <DataTemplate>
-                            <Border BorderBrush="#E7ECF2" BorderThickness="0 0 0 1" Padding="6 8">
-                                <StackPanel Orientation="Horizontal">
-                                    <TextBlock Text="{Binding Slot, StringFormat='{}{0:dd.MM HH:mm}'}" Width="110" Margin="0 0 8 0"/>
-                                    <TextBlock Text="{Binding Car}" Width="180" Margin="0 0 8 0"/>
-                                    <TextBlock Text="{Binding Customer}" Width="160" Margin="0 0 8 0"/>
-                                    <TextBlock Text="{Binding Phone}" Width="130"/>
-                                </StackPanel>
-                            </Border>
-                        </DataTemplate>
-                    </ItemsControl.ItemTemplate>
-                </ItemsControl>
             </StackPanel>
         </Border>
     </Grid>

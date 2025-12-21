@@ -9,7 +9,7 @@ namespace Auto.Services.Interfaces
     public interface ITestDriveService
     {
         Task<TestDrive> CreateAsync(Car car, Customer customer, DateTime slot, string notes);
-        Task<IReadOnlyList<TestDriveScheduleItem>> GetUpcomingAsync(int days);
+        Task<IReadOnlyList<TestDriveScheduleItem>> GetUpcomingAsync();
         Task CancelAsync(int testDriveId);
     }
 }

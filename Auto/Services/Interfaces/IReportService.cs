@@ -8,6 +8,8 @@ namespace Auto.Services.Interfaces
     {
         Task<IReadOnlyList<MonthlySalesReport>> GetMonthlySalesAsync(int months);
         Task<IReadOnlyList<ModelSalesReport>> GetModelSalesAsync();
+        Task<IReadOnlyList<ModelMonthRevenue>> GetModelRevenueForCurrentMonthAsync();
         Task<IReadOnlyList<TestDriveScheduleItem>> GetUpcomingTestDrivesAsync(int days);
+
     }
 }

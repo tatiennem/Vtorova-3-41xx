@@ -1,4 +1,6 @@
+using System;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Threading.Tasks;
 using Domain.Dto;
 using DAL.DbContext;
@@ -13,14 +15,18 @@ namespace Auto.ViewModels
         private readonly IReportService _reportService;
 
         [ObservableProperty] private int _months = 6;
+        [ObservableProperty] private string _currentMonth;
+        [ObservableProperty] private decimal _totalMonthRevenue;
+        [ObservableProperty] private int _totalMonthSales;
+        [ObservableProperty] private string _topModelThisMonth;
 
         public ObservableCollection<MonthlySalesReport> MonthlySales { get; } = new();
-        public ObservableCollection<ModelSalesReport> ModelSales { get; } = new();
-        public ObservableCollection<TestDriveScheduleItem> UpcomingTestDrives { get; } = new();
+        public ObservableCollection<ModelMonthRevenue> ModelsThisMonth { get; } = new(); // Новая коллекция
 
         public ReportsViewModel(IReportService reportService)
         {
             _reportService = reportService;
+            CurrentMonth = DateTime.Today.ToString("MMMM yyyy");
         }
 
         partial void OnMonthsChanged(int value)
@@ -30,6 +36,7 @@ namespace Auto.ViewModels
 
         public async Task RefreshAsync(bool force = false)
         {
+            // 1. Продажи по месяцам (как было)
             var monthly = await _reportService.GetMonthlySalesAsync(Months);
             MonthlySales.Clear();
             foreach (var item in monthly)
@@ -37,19 +44,26 @@ namespace Auto.ViewModels
                 MonthlySales.Add(item);
             }
 
-            var models = await _reportService.GetModelSalesAsync();
-            ModelSales.Clear();
-            foreach (var item in models)
+            // 2. НОВОЕ: Выручка по моделям за текущий месяц
+            var currentMonthData = await _reportService.GetModelRevenueForCurrentMonthAsync();
+            ModelsThisMonth.Clear();
+
+            foreach (var item in currentMonthData.OrderByDescending(m => m.Revenue))
             {
-                ModelSales.Add(item);
+                ModelsThisMonth.Add(item);
             }
 
-            var drives = await _reportService.GetUpcomingTestDrivesAsync(30);
-            UpcomingTestDrives.Clear();
-            foreach (var drive in drives)
-            {
-                UpcomingTestDrives.Add(drive);
-            }
+            // 3. Рассчитываем статистику текущего месяца
+            CalculateMonthStatistics(currentMonthData);
+        }
+
+        private void CalculateMonthStatistics(IReadOnlyList<ModelMonthRevenue> monthData)
+        {
+            TotalMonthRevenue = monthData.Sum(m => m.Revenue);
+            TotalMonthSales = monthData.Sum(m => m.Sold);
+
+            var topModel = monthData.OrderByDescending(m => m.Revenue).FirstOrDefault();
+            TopModelThisMonth = topModel?.Model ?? "Нет данных";
         }
     }
 }

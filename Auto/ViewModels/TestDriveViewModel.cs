@@ -108,7 +108,7 @@ namespace Auto.ViewModels
                 }
                 SelectedCustomer = Customers.FirstOrDefault(c => c.Id == selectedCustomerId) ?? Customers.FirstOrDefault();
 
-                var schedule = await _testDriveService.GetUpcomingAsync(14);
+                var schedule = await _testDriveService.GetUpcomingAsync();
                 Upcoming.Clear();
                 foreach (var item in schedule)
                 {

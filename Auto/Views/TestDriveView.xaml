@@ -68,23 +68,23 @@
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Border BorderBrush="#E7ECF2" BorderThickness="0 0 0 1" Padding="6 8">
-                                <!-- ИЗМЕНЕНИЕ 1: Замена StackPanel на Grid -->
+                                
                                 <Grid>
-                                    <!-- ИЗМЕНЕНИЕ 2: Добавление ColumnDefinitions -->
+                                   
                                     <Grid.ColumnDefinitions>
                                         <ColumnDefinition Width="*"/>
                                         <ColumnDefinition Width="Auto"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <!-- ИЗМЕНЕНИЕ 3: Перенос StackPanel в первую колонку -->
+                                    
                                     <StackPanel Grid.Column="0">
-                                        <TextBlock Text="{Binding Slot, StringFormat='{}{0:dd.MM HH:mm}'}" FontWeight="Bold"/>
+                                        <TextBlock Text="{Binding Slot, StringFormat='{}{0:dd.MM.yyy HH:mm}'}" FontWeight="Bold"/>
                                         <TextBlock Text="{Binding Car}" />
                                         <TextBlock Text="{Binding Customer}" Foreground="#4D5A6A"/>
                                         <TextBlock Text="{Binding Phone}" Foreground="#4D5A6A"/>
                                     </StackPanel>
 
-                                    <!-- ИЗМЕНЕНИЕ 4: Добавление кнопки удаления -->
+                                   
                                     <Button Grid.Column="1" 
                                     Command="{Binding DataContext.CancelTestDriveCommand, RelativeSource={RelativeSource AncestorType=UserControl}}"
                                     CommandParameter="{Binding}"
